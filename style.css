@@ -1,0 +1,99 @@
+html{
+    background-color: #002642;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+.red{
+    background-color: #840032;
+}
+.yellow{
+    color: #E59500;
+}
+
+.white{
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+#nav-links{
+    order: 0;
+}
+
+#nav-button{
+    order: 1;
+}
+
+.button{
+    background-color: #E59500;
+    border: 1px solid #840032;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 18px;
+}
+
+#nav-links{
+    font-size: 18px;
+}
+
+#nav-links a{
+    padding: 8px;
+}
+
+#nav-links a:link, #nav-links a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+#nav-links a:hover, #nav-links a:active {
+    color:#aaaaaa;
+    text-decoration: none;
+}
+
+a:link.button, a:visited.button{
+    color: #840032;
+}
+
+a:hover.button, a:active.button{
+    color: #420019;
+}
+
+
+/* Content stuff*/
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.content img{
+    width: 50%;
+}
+
+
+/* Footer stuff*/
+
+footer{
+    
+}
