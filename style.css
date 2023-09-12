@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
 html{
     background-color: #002642;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -20,17 +24,39 @@ body{
     color: white;
 }
 
+h1{
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 48px;
+    font-weight: 500;
+}
+
+#text p{
+    font-size: 18px;
+}
+
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0;
 }
 
 #nav-links{
     order: 0;
+    font-size: 18px;
 }
 
 #nav-button{
@@ -46,12 +72,10 @@ body{
     font-size: 18px;
 }
 
-#nav-links{
-    font-size: 18px;
-}
-
 #nav-links a{
     padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 #nav-links a:link, #nav-links a:visited {
@@ -69,11 +93,17 @@ a:link.button, a:visited.button{
 }
 
 a:hover.button, a:active.button{
-    color: #420019;
+    color: #340014;
+    background-color: #ba7a04;
 }
 
 
 /* Content stuff*/
+
+#text *{
+    margin-bottom: 0;
+    margin-top: 0;
+}
 
 .content{
     display: flex;
@@ -82,18 +112,27 @@ a:hover.button, a:active.button{
     align-items: center;
 }
 
-.text{
+#text{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .content img{
-    width: 50%;
+    width: 40%;
+    padding: 48px;
 }
 
 
 /* Footer stuff*/
 
 footer{
-    
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
 }
