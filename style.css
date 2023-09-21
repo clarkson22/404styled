@@ -1,47 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
 
+:root{
+    --yellow: #E59500;
+    --dark-yellow: #ad7000;
+    --white: #fff;
+    --red: #840032;
+    --dark-red: #400019;
+    --blue: #002642;
+}
+
 html{
-    background-color: #002642;
+    background-color: var(--blue);
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     min-height: 100%;
 }
 
 .red{
-    background-color: #840032;
+    background-color: var(--red);
 }
 .yellow{
-    color: #E59500;
+    color: var(--yellow);
 }
 
 .white{
-    color: white;
+    color: var(--white);
 }
 
 h1{
-    font-size: 128px;
+    font-size: 12.8rem;
     font-weight: 700;
     line-height: 1;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 600;
 }
 
 h3{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 500;
 }
 
 #text p{
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .navbar{
@@ -56,7 +66,7 @@ h3{
 
 #nav-links{
     order: 0;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 #nav-button{
@@ -64,12 +74,12 @@ h3{
 }
 
 .button{
-    background-color: #E59500;
-    border: 1px solid #840032;
+    background-color: var(--yellow);
+    border: 1px solid var(--red);
     border-radius: 4px;
     text-decoration: none;
     padding: 8px;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 #nav-links a{
@@ -79,7 +89,7 @@ h3{
 }
 
 #nav-links a:link, #nav-links a:visited {
-    color:white;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -89,20 +99,20 @@ h3{
 }
 
 a:link.button, a:visited.button{
-    color: #840032;
+    color: var(--red);
 }
 
 a:hover.button, a:active.button{
-    color: #340014;
-    background-color: #ba7a04;
+    color: var(--dark-red);
+    background-color: var(--dark-yellow);
 }
 
 
 /* Content stuff*/
 
 #text *{
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .content{
@@ -110,17 +120,20 @@ a:hover.button, a:active.button{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    height: 80vh;
 }
 
 #text{
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    flex: 0 1 auto;
 }
 
 .content img{
-    width: 40%;
+    max-width: 40%;
     padding: 48px;
 }
 
@@ -136,3 +149,31 @@ footer{
     bottom: 0;
     text-align: center;
 }
+
+footer p{
+    font-size: 1.8rem;
+}
+
+
+/* Mobile stuff */
+
+@media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+
+    #nav-links{
+        display: none;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    #nav-links{
+        display: none;
+    }
+
+    #nav-button{
+        display: none;
+    }
+
+  }
